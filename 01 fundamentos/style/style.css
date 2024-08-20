@@ -1,0 +1,25 @@
+body {
+    padding-bottom: 500px;
+}
+
+h2{
+    font-size: 22px;
+    color: blue;
+}
+h3{
+    color: red;
+    font-size: 15px;
+}
+.meu.titulo{
+    color: rgb(98, 0, 255);
+}
+.fundo.azul {
+    background-color: aqua;
+}
+.texto-pequeno,#meu-paragrafo {
+    color: aqua;
+}
+#minha-div {
+    background-image: url(../assets/as.png);
+padding: px;
+}
