@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Usuário</title>
+
+       <!-- Link para o CSS do Bootstrap -->
+       <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+    </head>
+  <body>
+
+<div class="container mt-5">
+    <div class="card">
+        <div class="card-header text-center">
+            <h2>Cadastro de Usuário</h2>
+        </div>
+        <div class="card-body">
+            <form>
+                <div class="form-group">
+                    <label for="nome">Nome:</label>
+                    <input type="text" class="form-control" id="nome" placeholder="Nome">
+                </div>
+                <div class="form-group">
+                    <label for="telefone">Telefone:</label>
+                    <input type="text" class="form-control" id="telefone" placeholder="Telefone">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" class="form-control" id="email" placeholder="Email">
+                </div>
+                <div class="form-group">
+                    <label for="senha">Senha:</label>
+                    <input type="password" class="form-control" id="senha" placeholder="Senha">
+                </div>
+
+
+               <div class="form-group">
+
+      <label>Sexo:</label><br>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="sexo" id="masculino" value="masculino">
+        <label class="form-check-label" for="masculino">Masculino</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="sexo" id="feminino" value="feminino">
+              <label class="form-check-label" for="feminino">Feminino</label>
+          </div>
+                </div>
+
+
+                </div>
+               
+
+                <div class="form-group">
+
+                  <label for="uf">UF:</label>
+                  <select class="form-check" id="uf">
+                      <option value="Acre">Acre</option>
+                      <option value="Alagoas">Alagoas</option>
+                      <option value="Amapá">Amapá</option>
+                      <option value="Amazonas">Amazonas</option>
+                      <option value="Bahia">Bahia</option>
+                      <option value="Ceará">Ceará</option>
+                      <option value="Distrito Federal">Distrito Federal</option>
+                      <option value="Espírito Santo">Espírito Santo</option>
+                      <option value="Goiás">Goiás</option>
+                      <option value="Maranhão">Maranhão</option>
+                      <option value="Mato Grosso">Mato Grosso</option>
+                      <option value="Mato Grosso do Sul">Mato Grosso do Sul</option>
+                      <option value="Minas Gerais">Minas Gerais</option>
+                      <option value="Pará">Pará</option>
+                      <option value="Paraíba">Paraíba</option>
+                      <option value="Paraná">Paraná</option>
+                      <option value="Pernambuco">Pernambuco</option>
+                      <option value="Piauí">Piauí</option>
+                      <option value="Rio de Janeiro">Rio de Janeiro</option>
+                      <option value="Rio Grande do Norte">Rio Grande do Norte</option>
+                      <option value="Rio Grande do Sul">Rio Grande do Sul</option>
+                      <option value="Rondônia">Rondônia</option>
+                      <option value="Roraima">Roraima</option>
+                      <option value="Santa Catarina">Santa Catarina</option>
+                      <option value="São Paulo">São Paulo</option>
+                      <option value="Sergipe">Sergipe</option>
+                      <option value="Tocantins">Tocantins</option>
+                  </select>
+              </div>
+              
+
+
+              <div class="form-group">
+                <label>Hobbies:</label><br>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="futebol" value="futebol">
+                    <label class="form-check-label" for="futebol">Futebol</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="xadrez" value="xadrez">
+                    <label class="form-check-label" for="xadrez">Xadrez</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="esportes" value="esportes">
+                    <label class="form-check-label" for="esportes">Esportes</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="musica" value="musica">
+                    <label class="form-check-label" for="musica">Música</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="cinema" value="cinema">
+                    <label class="form-check-label" for="cinema">Cinema</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="leitura" value="leitura">
+                    <label class="form-check-label" for="leitura">Leitura</label>
+                </div>
+            </div>
+
+            
+                </div>
+                <div class="form-group">
+                    <label for="observacao">Observação:</label>
+                    <textarea class="form-control" id="observacao" rows="3"></textarea>
+                </div>
+
+<div class="form-group d-grid gap-2 d-md-block">
+    <a href="#" class="btn btn-secondary" type="button">Voltar</a>
+    <button type="reset" class="btn btn-warning">Limpar</button>
+    <button type="submit" class="btn btn-primary">Salvar</button>
+</div>
+
+            </form>
+        </div>
+    </div>
+</div>
+
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>
