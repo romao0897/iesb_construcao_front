@@ -1,6 +1,6 @@
 'use client'
 
-import Pagina from './components/Pagina'
+import Pagina from '@/components/Pagina'
 import { Button, Card, Col, Row } from 'react-bootstrap'
 
 export default function HomePage() {
@@ -16,27 +16,27 @@ export default function HomePage() {
     {
       nome: "Clientes",
       imagem: "https://img.freepik.com/fotos-gratis/laboratorio-de-informatica-moderno-e-equipado_23-2149241262.jpg", quantidade: Clientes.length,
-      link: "/clientes"
+      link: "/Clientes"
     },
     {
       nome: "Produtos",
       imagem: "https://st3.depositphotos.com/1001335/14944/i/450/depositphotos_149444160-stock-illustration-materials-for-construction-3d-illustration.jpg", quantidade: cursos.length,
-      link: "/cursos"
+      link: "/Produtos"
     },
     {
-      nome: "Fornecedor",
+      nome: "Fornecedores",
       imagem: "https://respostas.sebrae.com.br/wp-content/uploads/2021/02/fornecedores-959x615.jpg", quantidade: professores.length,
-      link: "/professores"
+      link: "/Fornecedores"
     },
     {
       nome: "Funcionarios",
       imagem: "https://img.freepik.com/fotos-gratis/equipe-trabalhando-juntos-no-projeto_23-2149325422.jpg", quantidade: disciplinas.length,
-      link: "/disciplinas"
+      link: "/Funcionarios"
     },
     {
       nome: "Pedidos",
       imagem: "https://img.freepik.com/fotos-premium/ferramentas-de-construcao-em-carrinho-de-compras-isoladas-em-branco_392895-109786.jpg", quantidade: alunos.length,
-      link: "/alunos"
+      link: "/Pedidos"
     },
   ]
 
@@ -44,7 +44,7 @@ export default function HomePage() {
 
   return (
     <Pagina titulo={"Madereira RM"}>
-      <Row md={4}>
+      <Row md={5}>
         {lista.map(item => (
           <Col className='py-2'>
             <Card style={{height: '100%'}}>

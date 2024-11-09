@@ -1,7 +1,7 @@
 'use client'
 
 
-import Pagina from '../components/Pagina'
+import Pagina from '@/components/Pagina'
 import { useEffect, useState } from 'react'
 import { Button, Table } from 'react-bootstrap'
 import { FaPen, FaPlusCircle, FaTrash } from 'react-icons/fa'

@@ -1,6 +1,6 @@
 'use client'
 
-import Pagina from '../../components/Pagina'
+import Pagina from '@/components/Pagina'
 import { Formik } from 'formik'
 import { useRouter } from 'next/navigation'
 import { Button, Col, Form, Row } from 'react-bootstrap'
