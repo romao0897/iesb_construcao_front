@@ -68,7 +68,7 @@ export default function ProdutosPage() {
                 <td>{produto.cor}</td>
                 <td className='text-center'>
                   {/* Botões das ações */}
-                  <Button className='me-2' href={`/produtos/form?id=${produto.id}`}><FaPen /></Button>
+                  <Button className='me-2' href={`/Produtos/form?id=${produto.id}`}><FaPen /></Button>
                   <Button variant='danger' onClick={() => excluir(produto)}><FaTrash /></Button>
                 </td>
               </tr>
