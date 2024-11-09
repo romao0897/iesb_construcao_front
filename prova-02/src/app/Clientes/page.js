@@ -68,7 +68,7 @@ export default function ClientesPage() {
                 <td>{cliente.observacoes}</td>
                 <td className='text-center'>
                   {/* Botões das ações */}
-                  <Button className='me-2' href={`/clientes/form?id=${cliente.id}`}><FaPen /></Button>
+                  <Button className='me-2' href={`/Clientes/form?id=${cliente.id}`}><FaPen /></Button>
                   <Button variant='danger' onClick={() => excluir(cliente)}><FaTrash /></Button>
                 </td>
               </tr>
