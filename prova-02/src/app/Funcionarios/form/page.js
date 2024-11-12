@@ -5,9 +5,9 @@ import { Formik } from 'formik'
 import { useRouter } from 'next/navigation'
 import { Button, Col, Form, Row } from 'react-bootstrap'
 import { FaArrowLeft, FaCheck } from "react-icons/fa"
+import { ReactInputMask } from 'react-input-mask'
 import { v4 } from 'uuid'
 import * as Yup from 'yup'
-import { useEffect } from 'react'
 
 export default function FuncionarioFormPage(props) {
   const router = useRouter()
@@ -157,9 +157,11 @@ export default function FuncionarioFormPage(props) {
               <Row className='mb-2'>
                 <Form.Group as={Col}>
                   <Form.Label>Telefone:</Form.Label>
-                  <Form.Control
+                  <Form.Control as={ReactInputMask}
                     name='telefone'
                     type='text'
+                    mask={'(99)99999-9999'}
+                    placeholder={'(99)99999-9999'}
                     value={values.telefone}
                     onChange={handleChange}
                     onBlur={handleBlur}

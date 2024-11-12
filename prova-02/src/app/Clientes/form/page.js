@@ -5,6 +5,7 @@ import { Formik } from 'formik'
 import { useRouter } from 'next/navigation'
 import { Button, Col, Form, Row } from 'react-bootstrap'
 import { FaArrowLeft, FaCheck } from "react-icons/fa"
+import { ReactInputMask } from "react-input-mask"
 import { v4 } from 'uuid'
 import * as Yup from 'yup'
 
@@ -81,9 +82,11 @@ export default function ClienteFormPage(props) {
 
                 <Form.Group as={Col}>
                   <Form.Label>CPF:</Form.Label>
-                  <Form.Control
+                  <Form.Control as={ReactInputMask}
                     name='cpf'
                     type='text'
+                    mask={'(99)99999-9999'}
+                    placeholder={'(99)99999-9999'}
                     value={values.cpf}
                     onChange={handleChange}
                     onBlur={handleBlur}

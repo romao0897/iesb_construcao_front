@@ -57,12 +57,12 @@ export default function ProdutosPage() {
         <tbody>
           {produtos.map(produto => {
             return (
-              <tr>
-                <td>{produto.nomeproduto}</td>
-                <td>{produto.tipo}</td>
-                <td>{produto.medida}</td>
+              <tr key={produto.id}>
+                <td>{produto.nomeProduto}</td>
+                <td>{produto.tipoMaterial}</td>
+                <td>{produto.unidadeMedida}</td>
                 <td>{produto.preco}</td>
-                <td>{produto.quantidade}</td>
+                <td>{produto.quantidadeEstoque}</td>
                 <td>{produto.marca}</td>
                 <td>{produto.fornecedor}</td>
                 <td>{produto.cor}</td>

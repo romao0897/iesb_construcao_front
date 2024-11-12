@@ -6,36 +6,36 @@ import { useState, useEffect } from 'react'
 
 export default function HomePage() {
 
-  const Clientes = JSON.parse(localStorage.getItem("Clientes")) || []
-  const Produtos = JSON.parse(localStorage.getItem("Produtos")) || []
-  const Fornecedores = JSON.parse(localStorage.getItem("Fornecedores")) || []
-  const Funcionarios = JSON.parse(localStorage.getItem("Funcionarios")) || []
-  const Pedidos = JSON.parse(localStorage.getItem("Pedidos")) || []
+  const clientes = JSON.parse(localStorage.getItem("clientes")) || []
+  const produtos = JSON.parse(localStorage.getItem("produtos")) || []
+  const fornecedores = JSON.parse(localStorage.getItem("fornecedores")) || []
+  const funcionarios = JSON.parse(localStorage.getItem("funcionarios")) || []
+  const pedidos = JSON.parse(localStorage.getItem("pedidos")) || []
 
   const lista = [
     {
       nome: "Clientes",
-      imagem: "https://img.freepik.com/fotos-gratis/laboratorio-de-informatica-moderno-e-equipado_23-2149241262.jpg", quantidade: Clientes.length,
+      imagem: "https://img.freepik.com/fotos-gratis/laboratorio-de-informatica-moderno-e-equipado_23-2149241262.jpg", quantidade: clientes.length,
       link: "/Clientes"
     },
     {
       nome: "Produtos",
-      imagem: "https://st3.depositphotos.com/1001335/14944/i/450/depositphotos_149444160-stock-illustration-materials-for-construction-3d-illustration.jpg", quantidade: Produtos.length,
+      imagem: "https://st3.depositphotos.com/1001335/14944/i/450/depositphotos_149444160-stock-illustration-materials-for-construction-3d-illustration.jpg", quantidade: produtos.length,
       link: "/Produtos"
     },
     {
       nome: "Fornecedores",
-      imagem: "https://respostas.sebrae.com.br/wp-content/uploads/2021/02/fornecedores-959x615.jpg", quantidade: Fornecedores.length,
+      imagem: "https://respostas.sebrae.com.br/wp-content/uploads/2021/02/fornecedores-959x615.jpg", quantidade: fornecedores.length,
       link: "/Fornecedores"
     },
     {
       nome: "Funcionarios",
-      imagem: "https://img.freepik.com/fotos-gratis/equipe-trabalhando-juntos-no-projeto_23-2149325422.jpg", quantidade: Funcionarios.length,
+      imagem: "https://img.freepik.com/fotos-gratis/equipe-trabalhando-juntos-no-projeto_23-2149325422.jpg", quantidade: funcionarios.length,
       link: "/Funcionarios"
     },
     {
       nome: "Pedidos",
-      imagem: "https://img.freepik.com/fotos-premium/ferramentas-de-construcao-em-carrinho-de-compras-isoladas-em-branco_392895-109786.jpg", quantidade: Pedidos.length,
+      imagem: "https://img.freepik.com/fotos-premium/ferramentas-de-construcao-em-carrinho-de-compras-isoladas-em-branco_392895-109786.jpg", quantidade: pedidos.length,
       link: "/Pedidos"
     },
   ]
@@ -74,7 +74,7 @@ export default function HomePage() {
           <p><strong>Tempo restante: {formatTime(timeLeft)}</strong></p>
         </div>
         <img 
-          src="https://st3.depositphotos.com/1063437/18864/i/450/depositphotos_188648452-stock-photo-cordless-drill-with-drill-bit.jpg" 
+          src="https://st3.depositphotos.com/1063437/18864/i/450/depositphotos_188648452-stock-photo-cordless-drill-with-drill-bit.jpg"  
           alt="Produto de oferta" 
           style={{ width: '150px', height: 'auto', borderRadius: '5px' }} 
         />

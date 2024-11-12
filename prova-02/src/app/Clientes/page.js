@@ -57,7 +57,7 @@ export default function ClientesPage() {
         <tbody>
           {clientes.map(cliente => {
             return (
-              <tr>
+              <tr key={cliente.id}>
                 <td>{cliente.nomeCompleto}</td>
                 <td>{cliente.endereco}</td>
                 <td>{cliente.email}</td>

@@ -49,7 +49,7 @@ export default function FornecedoresPage() {
           {fornecedores.map(fornecedor => {
             return (
               <tr key={fornecedor.id}>
-                <td>{fornecedor.nomefornecedores}</td>
+                <td>{fornecedor.nomeFornecedor}</td>
                 <td>{fornecedor.cnpj}</td>
                 <td>{fornecedor.telefone}</td>
                 <td>{fornecedor.email}</td>
