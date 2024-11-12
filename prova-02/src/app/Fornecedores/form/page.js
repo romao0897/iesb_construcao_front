@@ -8,7 +8,7 @@ import { FaArrowLeft, FaCheck } from "react-icons/fa"
 import { v4 } from 'uuid'
 import * as Yup from 'yup'
 import { useEffect } from 'react'
-import MaskedInput from 'react-text-mask'
+
 
 export default function FornecedorFormPage(props) {
   const router = useRouter()

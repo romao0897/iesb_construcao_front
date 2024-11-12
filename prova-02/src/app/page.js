@@ -8,9 +8,9 @@ export default function HomePage() {
 
   const Clientes = JSON.parse(localStorage.getItem("Clientes")) || []
   const Produtos = JSON.parse(localStorage.getItem("Produtos")) || []
-  const professores = JSON.parse(localStorage.getItem("professores")) || []
-  const disciplinas = JSON.parse(localStorage.getItem("disciplinas")) || []
-  const alunos = JSON.parse(localStorage.getItem("alunos")) || []
+  const Fornecedores = JSON.parse(localStorage.getItem("Fornecedores")) || []
+  const Funcionarios = JSON.parse(localStorage.getItem("Funcionarios")) || []
+  const Pedidos = JSON.parse(localStorage.getItem("Pedidos")) || []
 
   const lista = [
     {
@@ -25,17 +25,17 @@ export default function HomePage() {
     },
     {
       nome: "Fornecedores",
-      imagem: "https://respostas.sebrae.com.br/wp-content/uploads/2021/02/fornecedores-959x615.jpg", quantidade: professores.length,
+      imagem: "https://respostas.sebrae.com.br/wp-content/uploads/2021/02/fornecedores-959x615.jpg", quantidade: Fornecedores.length,
       link: "/Fornecedores"
     },
     {
       nome: "Funcionarios",
-      imagem: "https://img.freepik.com/fotos-gratis/equipe-trabalhando-juntos-no-projeto_23-2149325422.jpg", quantidade: disciplinas.length,
+      imagem: "https://img.freepik.com/fotos-gratis/equipe-trabalhando-juntos-no-projeto_23-2149325422.jpg", quantidade: Funcionarios.length,
       link: "/Funcionarios"
     },
     {
       nome: "Pedidos",
-      imagem: "https://img.freepik.com/fotos-premium/ferramentas-de-construcao-em-carrinho-de-compras-isoladas-em-branco_392895-109786.jpg", quantidade: alunos.length,
+      imagem: "https://img.freepik.com/fotos-premium/ferramentas-de-construcao-em-carrinho-de-compras-isoladas-em-branco_392895-109786.jpg", quantidade: Pedidos.length,
       link: "/Pedidos"
     },
   ]
