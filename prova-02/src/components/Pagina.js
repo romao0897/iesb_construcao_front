@@ -28,7 +28,7 @@ export default function Pagina({ titulo, children }) {
               <Nav.Link href="/Funcionarios" className="mx-3 text-light d-flex align-items-center">
                 <FaUserTie className="me-1" /> Funcionários
               </Nav.Link>
-              <Nav.Link href="/" className="mx-3 text-light d-flex align-items-center">
+              <Nav.Link href="/Pedidos" className="mx-3 text-light d-flex align-items-center">
                 <FaClipboardList className="me-1" /> Pedidos
               </Nav.Link>
             </Nav>

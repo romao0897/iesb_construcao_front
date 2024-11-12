@@ -35,7 +35,9 @@ export default function PedidoFormPage(props) {
     quantidade: '',
     precoTotal: '',
     dataPedido: '',
-    status: ''
+    status: '',
+    formaPagamento: '',
+    enderecoEntrega: ''
   }
 
   const validationSchema = Yup.object().shape({
@@ -44,7 +46,9 @@ export default function PedidoFormPage(props) {
     quantidade: Yup.number().required("Campo obrigatório").positive("Quantidade deve ser positiva"),
     precoTotal: Yup.number().required("Campo obrigatório").positive("Preço total deve ser positivo"),
     dataPedido: Yup.date().required("Campo obrigatório"),
-    status: Yup.string().required("Campo obrigatório")
+    status: Yup.string().required("Campo obrigatório"),
+    formaPagamento: Yup.string().required("Campo obrigatório"),
+    enderecoEntrega: Yup.string().required("Campo obrigatório")
   })
 
   return (
@@ -149,6 +153,40 @@ export default function PedidoFormPage(props) {
                     <option value="Cancelado">Cancelado</option>
                   </Form.Select>
                   <Form.Control.Feedback type='invalid'>{errors.status}</Form.Control.Feedback>
+                </Form.Group>
+              </Row>
+
+              <Row className='mb-2'>
+                <Form.Group as={Col}>
+                  <Form.Label>Forma de Pagamento:</Form.Label>
+                  <Form.Select
+                    name='formaPagamento'
+                    value={values.formaPagamento}
+                    onChange={handleChange}
+                    onBlur={handleBlur}
+                    isValid={touched.formaPagamento && !errors.formaPagamento}
+                    isInvalid={touched.formaPagamento && errors.formaPagamento}
+                  >
+                    <option value="">Selecione a forma de pagamento</option>
+                    <option value="Boleto">Boleto</option>
+                    <option value="Cartão">Cartão</option>
+                    <option value="Pix">Pix</option>
+                  </Form.Select>
+                  <Form.Control.Feedback type='invalid'>{errors.formaPagamento}</Form.Control.Feedback>
+                </Form.Group>
+
+                <Form.Group as={Col}>
+                  <Form.Label>Endereço de Entrega:</Form.Label>
+                  <Form.Control
+                    name='enderecoEntrega'
+                    type='text'
+                    value={values.enderecoEntrega}
+                    onChange={handleChange}
+                    onBlur={handleBlur}
+                    isValid={touched.enderecoEntrega && !errors.enderecoEntrega}
+                    isInvalid={touched.enderecoEntrega && errors.enderecoEntrega}
+                  />
+                  <Form.Control.Feedback type='invalid'>{errors.enderecoEntrega}</Form.Control.Feedback>
                 </Form.Group>
               </Row>
 
